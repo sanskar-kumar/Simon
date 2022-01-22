@@ -25,6 +25,16 @@ body {
     margin: auto;
 }
 
+.str {
+    background-image: url("https://img.icons8.com/nolan/64/start.png");
+    background-size: cover;
+    margin: 25px;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 10%;
+}
+
 .btn {
     margin: 25px;
     display: inline-block;
@@ -37,6 +47,10 @@ body {
 .game-over {
     background-color: red;
     opacity: 100%;
+}
+
+.start {
+    background-color: white;
 }
 
 .red {
