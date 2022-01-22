@@ -15,6 +15,14 @@ $(document).keypress(function() {
     }
 
 });
+$(".str").click(function() {
+    if (started == 0) {
+        $("h1").text("Level " + level);
+        nextSequence();
+        started = 1;
+        $("#game-name").text("Keep Going");
+    }
+});
 
 function playSound(name) {
     var audio = new Audio("sounds/" + name + ".mp3");
@@ -77,7 +85,7 @@ function checkAnswer(currentLevel) {
         setTimeout(function() {
             $(document.body).removeClass("game-over");
         }, 200);
-        $("h1").text("Game Over! Press any key to restart");
+        $("h1").text("Game Over! Press any key or button to restart");
         $("#game-name").text("Your Score: " + score);
         setTimeout(function() {
             startOver();
